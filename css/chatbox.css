@@ -1,0 +1,165 @@
+/* äº¬ä¸œå•†åŸŽ jimi 2015-11-17 11:01 */
+ @charset "UTF-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,hr,button,article,aside,details,figcaption,figure,footer,header,menu,nav,section
+{margin:0;padding:0}
+table{border-collapse:collapse;border-spacing:0}
+th{text-align:inherit}
+caption,th{text-align:left}
+img{border:0}
+img{-ms-interpolation-mode:bicubic}
+iframe{display:block}
+ul,ol,li{list-style:none}
+hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}
+button,input,select,textarea{font-family:inherit;font-size:100%;vertical-align:middle;font-weight:400}
+button:focus,input:focus,select:focus,textarea:focus{outline:0}
+textarea{overflow:auto;vertical-align:top}
+button,input{line-height:normal}
+button,input[type=button],input[type=reset],input[type=submit]{cursor:pointer}
+button[disabled],input[disabled]{cursor:default}
+input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;*background-color:transparent}
+article,aside,details,figcaption,figure,footer,header,main,nav,section,summary{display:block}
+audio,canvas,video{display:inline-block;*display:inline;*zoom:1}
+audio:not([controls]){display:none;height:0}
+.chat-block a{cursor:pointer}a{background:transparent}
+a:focus{outline:thin dotted}
+a:active,a:hover{outline:0}
+a:link,a:visited,ins{text-decoration:none}
+.fl{float:left}
+.fr{float:right}
+.clearfix:after{content:" .";display:block;clear:both;visibility:hidden;height:0}
+.clearfix{*zoom:1}
+a{color:#005EA7;text-decoration:none}
+a:hover{text-decoration:underline}
+h1,h2,h3,h4,h5,h6{color:#333}
+.txt-point{color:#e53836}
+body{background-color:#ABABAB;color:#333;font:12px/150% Arial,Verdana,"å®‹ä½“";font-weight:400}
+.wrap{width:990px;height:600px;margin:0 auto;background-color:#FFF;box-shadow:0 2px 2px #777;border-radius:3px}
+.header{position:relative;padding:9px 0 4px 12px;height:50px;background-color:#2d8ef2;border-radius:3px 3px 0 0;*z-index:1;margin-top: 20px}
+.header .logo{height:88px;left:0;top:-25px;width:535px;position:absolute;z-index:1}
+.header .logo-name{margin:3px 0 2px 75px;width:234px;height:18px;background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -105px -74px #2796e1}
+.header .sign{margin:0 150px 0 79px;line-height:24px;font-weight:700;font-size:14px;font-family:"Microsoft YaHei","å¾®è½¯é›…é»‘"}
+.header .sign:hover{cursor:default}
+.header .sign,.header .service-online{color:#91c4ed}
+.header .service-online{position:absolute;top:0;right:135px;width:67px;height:64px;cursor:pointer;text-align:center;line-height:98px}
+.header .service-online .service-icon{display:block;width:38px;height:38px;left:18px;top:10px;position:absolute;background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat 0 0}
+.header .service-online a{color:#FFF;font-weight:400}
+.header .separate-line{position:absolute;top:13px;right:113px;width:1px;height:40px;background-color:#51a7e5}
+.header .weixin-code{position:absolute;top:0;right:202px;z-index:123;width:67px;height:64px;cursor:pointer;text-align:center;line-height:98px}
+.header .weixin-code .weixin-img-s{color:#fff;font-weight:400}
+.header .weixin-code .weixin-icon{display:block;width:38px;height:38px;left:18px;top:10px;position:absolute;background:url("http://www.17neitui.com/images/QR200.png") no-repeat 0 0}
+.header .weixin-code .weixin-img-b{background:url("http://www.17neitui.com/images/QR200.png") no-repeat 0 0;position:absolute;display:block;top:55px;right:-10px;width:184px;height:70px;padding-top:118px;text-align:center;display:none}
+.header .weixin-code:hover .weixin-img-b{display:block}
+.header .full-screen{background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -50px -358px;cursor:pointer;height:64px;position:absolute;right:67px;top:0;width:67px}
+.header .full-screen:hover{background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -117px -358px}
+.header .full-screen-quit{background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -184px -358px;cursor:pointer;height:64px;position:absolute;right:67px;top:0;width:67px}
+.header .full-screen-quit:hover{background-position:-251px -358px}
+.header .close-screen{background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -318px -358px;cursor:pointer;height:64px;position:absolute;right:0;top:0;width:67px;border-top-right-radius:3px}
+.header .close-screen:hover{background:url("http://www.17neitui.com/img/default/contact-avatar.jpg") no-repeat -385px -358px}
+.l-area{width:632px;overflow:hidden}
+.l-area .l-area-content .chat-block{position:relative;padding-top:16px;height:371px;background-color:#EFF0F2}
+.r-area{width:357px;position:relative;overflow:hidden;background-color:#FFF;border-left:1px solid #DCDEE4;border-radius:0 0 3px}
+.r-area .side-nav{position:relative;height:40px;line-height:40px;background-color:#EFF0F2;border-bottom:1px solid #d4d9df}
+.r-area .side-nav li{width:178px;text-align:center}
+.r-area .side-nav a{font-weight:700;color:#333;display:block;width:100%;font-size:14px;font-family:"Microsoft YaHei","å¾®è½¯é›…é»‘"}
+.r-area .side-nav a:hover{TEXT-DECORATION:none}
+.r-area .side-nav li.current a{background-color:#e1e4e8}
+.r-area .side-nav .tab_arrow{position:absolute;bottom:-1px;display:block;width:178px;overflow:hidden}
+.r-area .side-nav .tab_arrow b{background:url("../img/icon.png") no-repeat scroll -360px -490px;display:block;height:9px;margin:0 auto;width:15px}
+.edit-block{position:relative;height:120px;border-top:0px solid #DCDEE4;border-radius:0 0 0 3px}
+.edit-block .inputL{float:left;width:552px;height:120px}
+.edit-block .inputM{float:left;width:10px;_width:7px;height:120px}
+.edit-block .inputR{float:left;width:70px;height:120px}
+.edit-block .text-type{position:absolute;padding-left:8px;padding-top:4px;top:10px;left:12px;border:0 none;resize:none;font-size:12px;color:#333;line-height:18px;word-break:break-all;word-wrap:break-word;overflow:hidden;width:610px;height:54px;font-weight:400}
+.edit-block .pressed{}
+.edit-block .send{position:absolute;bottom:14px;right:10px;background:url("../img/icon.png") no-repeat -1px -1px;width:85px;height:34px;cursor:pointer}
+.edit-block .send:hover{background-position:-1px -40px}
+.edit-block .send-pressed{}
+.suggestion-area{position:absolute;z-index:120;bottom:105px;left:15px;padding:10px 7px 14px;width:510px;border:1px solid #c9cbce;background-color:#fff}
+.suggestion-area .suggestion{line-height:24px}
+.suggestion-area .suggestion:hover{background-color:#eceef2;cursor:pointer}
+.suggestion-area .suggestion a{color:#333;display:block;*zoom:1}
+.suggestion-area .suggestion a:hover{text-decoration:none}
+.suggestion-area .suggestion .suggestion-total{color:#909090}
+.suggestion-area .suggestion .txt-green{color:#39a434}
+.suggestion-area .hover{background-color:#eceef2}
+.txt-red{color:#d94643}
+.intro-bar {
+    position: relative;
+    padding-left: 10px;
+    border-bottom: 1px solid #ced9e1;
+    height: 38px;
+    line-height: 38px;
+    color: #333;
+    background-color: #FFF;
+    cursor: pointer;
+    width: 347px;
+}
+/** initial setup **/
+.nano {
+    position : relative;
+    width    : 100%;
+    height   : 100%;
+    overflow : hidden;
+}
+.nano > .nano-content {
+    position      : absolute;
+    overflow      : scroll;
+    overflow-x    : hidden;
+    top           : 0;
+    right         : 0;
+    bottom        : 0;
+    left          : 0;
+}
+.nano > .nano-content:focus {
+    outline: thin dotted;
+}
+.nano > .nano-content::-webkit-scrollbar {
+    display: none;
+}
+.has-scrollbar > .nano-content::-webkit-scrollbar {
+    display: block;
+}
+.nano > .nano-pane {
+    background : rgba(0,0,0,.25);
+    position   : absolute;
+    width      : 10px;
+    right      : 0;
+    top        : 0;
+    bottom     : 0;
+    visibility : hidden; /* Target only IE7 and IE8 with this hack */
+    opacity    : .01;
+    -webkit-transition    : .2s;
+    -moz-transition       : .2s;
+    -o-transition         : .2s;
+    transition            : .2s;
+    -moz-border-radius    : 5px;
+    -webkit-border-radius : 5px;
+    border-radius         : 5px;
+}
+.nano > .nano-pane > .nano-slider {
+    background: #444;
+    background: rgba(0,0,0,.5);
+    position              : relative;
+    margin                : 0 1px;
+    -moz-border-radius    : 3px;
+    -webkit-border-radius : 3px;
+    border-radius         : 3px;
+}
+.nano:hover > .nano-pane, .nano-pane.active, .nano-pane.flashed {
+    visibility : visible; /* Target only IE7 and IE8 with this hack */
+    opacity    : 0.99;
+}
+.chat-tips {
+    background-color: #b4b4bd;
+    height: 30px;
+    line-height: 30px;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    opacity: 0.6;
+}
+.chat-tips p {
+    position: relative;
+}

@@ -1,0 +1,173 @@
+.avatar_img_mask {
+    position: absolute;
+    background: url('../img/avatar_mask.png');
+    top: 0;
+    width: 50px;
+    height: 50px;
+}
+/*style for robot chat*/
+.robot {
+    margin: 0 -10px 20px 10px;
+    position: relative;
+}
+.robot .lt {
+    background: url("../img/msg_bg_lr.png") no-repeat 0 0;
+    width:26px;
+    height: 10px;
+}
+.robot .mt{
+    background: url("../img/msg_bg_tb.png") repeat-x 0 -23px;
+    height: 10px;
+}
+
+.robot .rt {
+    background: url("../img/msg_bg_lr.png") no-repeat -35px 0;
+    width: 10px;
+    height:10px;
+}
+
+.robot .lm {
+    background: url("../img/msg_bg_lr.png") repeat-y -94px 0;
+    width: 26px;
+    vertical-align: top;
+    position: relative;
+}
+.robot .lm span {
+    background: url("../img/msg_bg_lr.png") no-repeat 0 -14px;
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+}
+.robot .mm {
+    padding: 0 5px;
+    background-color: #FFF;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #333;
+    line-height: 20px;
+}
+.robot .rm {
+    background: url("../img/msg_bg_lr.png") repeat-y -113px 0;
+    width: 10px;
+}
+
+.robot .lb {
+    background: url("../img/msg_bg_lr.png") no-repeat 0 -43px;
+    width: 10px;
+    height: 10px;
+}
+.robot .mb {
+    background: url("../img/msg_bg_tb.png") repeat-x 0 -25px;
+    height: 10px;
+}
+.robot .rb {
+    background: url("../img/msg_bg_lr.png") no-repeat -35px -43px;
+    width: 10px;
+    height: 10px;
+}
+
+
+.robot .msg {
+    margin-left: 59px;
+    margin-right: 40px;
+    margin-top: 2px;
+    float: left;
+    display: inline;
+}
+
+.robot .header_img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.robot .header_img.robotimg {
+    background: url("../img/robot-logo.jpg") no-repeat 1px 2px;
+}
+.robot .header_img.humanimg {
+    background: url("../img/human-support.png") no-repeat;
+}
+
+/*style for customer chat*/
+
+.customer {
+    position: relative;
+    margin: 0 12px 20px 20px;
+}
+.customer .lt {
+    background: url("../img/msg_bg_lr.png") no-repeat -47px -0;
+    width: 10px;
+    height: 10px;
+}
+.customer .mt {
+    background: url("../img/msg_bg_tb.png") repeat-x 0 0;
+    height: 10px;
+}
+.customer .rt {
+    background: url("../img/msg_bg_lr.png") no-repeat -63px 0;
+    width: 26px;
+    height: 10px;
+}
+
+.customer .lm {
+    background: url("../img/msg_bg_lr.png") repeat-y -126px 0;
+    width: 10px;
+}
+.customer .mm {
+    padding: 1px 8px;
+    background-color: #3897E7;
+    word-break: break-all;
+    word-wrap: break-word;
+    color: #FFF;
+}
+
+.customer .rm span {
+    background: url("../img/msg_bg_lr.png") no-repeat -63px -14px;
+    display: inline-block;
+    width: 26px;
+    height: 16px;
+    position: absolute;
+    top: 5px;
+}
+.customer .rm {
+    background: url("../img/msg_bg_lr.png") repeat-y -129px 0px;
+    width: 26px;
+    vertical-align: top;
+    position: relative;
+}
+
+.customer .lb {
+    background: url("../img/msg_bg_lr.png") no-repeat -47px -36px;
+    width: 10px;
+    height: 10px;
+}
+
+.customer .mb {
+    background: url("../img/msg_bg_tb.png") repeat-x -106px -4px;
+    height: 10px;
+}
+
+.customer .rb {
+    background: url("../img/msg_bg_lr.png") no-repeat -63px -36px;
+    width: 26px;
+    height: 10px;
+}
+.customer .msg {
+    float: right;
+    margin-right: 73px;
+    margin-top: 2px;
+}
+
+.customer .header_img {
+    position: absolute;
+    top: 0;
+    right: 14px;
+    width: 50px;
+    height: 50px;
+}
+.customer .header_img.customerimg{
+    background: url("../img/customer_avatar.png") no-repeat center;
+}
