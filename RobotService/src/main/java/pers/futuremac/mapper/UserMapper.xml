@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="pers.futuremac.mapper.UserMapper">
+    <resultMap id="userResultMap" type="pers.futuremac.domain.User">
+        <id column="id" property="id" jdbcType="BIGINT"/>
+        <result column="status" property="status" jdbcType="BIGINT"/>
+        <result column="name" property="name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="column_list">
+        id,name,status,
+    </sql>
+
+    <select id="getUser"  resultMap="userResultMap" timeout="1">
+        SELECT
+        <include refid="column_list" />
+         FROM user
+        WHERE status=1
+        LIMIT 1;
+    </select>
+
+    <insert id="storeChatItem" parameterType="hashmap" timeout="1">
+        INSERT INTO message_history (from_id,to_id,text,send_time)
+        VALUES (#{from},#{to},#{text},now())
+    </insert>
+</mapper>

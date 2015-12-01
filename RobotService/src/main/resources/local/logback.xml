@@ -1,0 +1,31 @@
+<configuration scan="true" scanPeriod="60 seconds" debug="false">
+    <property name="serviceName" value="RestService"></property>
+    <property name="LOG_HOME" value="D:\log"></property>
+    <contextName>${serviceName}</contextName>
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss} %5p %c{10}] %m%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${LOG_HOME}/service.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${LOG_HOME}/service.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
+            <maxHistory>24</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <pattern>[%d{yyyy-MM-dd HH:mm:ss} %5p %c{10}] %m%n</pattern>
+        </encoder>
+
+    </appender>
+
+    <logger name="pers.futuremac.controller.ServiceController" level="DEBUG" additivity="false">
+        <appender-ref ref="STDOUT"/>
+    </logger>
+
+    <root level="INFO">
+        <appender-ref ref="STDOUT"></appender-ref>
+        <appender-ref ref="FILE"></appender-ref>
+    </root>
+</configuration>
